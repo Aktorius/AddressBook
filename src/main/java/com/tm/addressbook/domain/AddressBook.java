@@ -16,6 +16,9 @@ public class AddressBook implements IAddressBook {
      * @param persons the list of persons to include in the address book
      */
     public AddressBook(List<Person> persons) {
+        if(persons == null)
+            throw new IllegalArgumentException("persons cannot be null");
+
         this.persons = persons;
     }
 
