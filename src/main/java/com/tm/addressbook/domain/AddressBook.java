@@ -21,6 +21,6 @@ public class AddressBook implements IAddressBook {
 
     @Override
     public List<Person> getPersons() {
-        return null;
+        return persons;
     }
 }
