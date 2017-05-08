@@ -21,6 +21,18 @@ import static org.mockito.Mockito.when;
  * Created by Aktorius on 08/05/2017.
  */
 public class AddressBookServicesTests {
+
+    @Test (expected = IllegalArgumentException.class)
+    public void callConstructorWithAParameterNullShouldThrowAnException(){
+        // Given
+        IAddressBookServices addressBookServices;
+
+        // When
+        addressBookServices = new AddressBookServices(null);
+
+        // Then an exception should have been thrown
+    }
+
     @Test
     public void numberOfPersonsShoulsReturnTheNumberOfPersonsInTheAddressBook(){
         // Given
