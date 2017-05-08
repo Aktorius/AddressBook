@@ -43,7 +43,7 @@ public class AddressBookCsv implements IAddressBook {
                 LocalDate.parse(arrayLine[2].substring(0, 6) + FIRST_TWO_DIGITS_YEAR
                         + arrayLine[2].substring(6, arrayLine[2].length()), formatter)
         )).collect(Collectors.toList()); // Apply and Collect our transformations
-        
+
         this.persons = persons;
     }
 
